@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Attendance</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="lobby">
+        <h1>Quick Attendance</h1>
+        <div class="container">
+            <div class="name-entry">
+                <input type="text" id="nameInput" placeholder="Enter your name">
+                <button id="openCameraButton">Open Camera</button>
+            </div>
+
+            <div id="cameraModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <video id="video" autoplay></video>
+                    <button id="captureButton">Capture</button>
+                </div>
+            </div>
+
+            <div class="log">
+                <h2>Attendance Log</h2>
+                <table id="logTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                            <th>Image</th>
+                            <th>Present</th>
+                            <th>Location</th> 
+                        </tr>
+                    </thead>
+                    <tbody id="logBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="restartButton">Restart</button>
+            <button id="saveButton">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
