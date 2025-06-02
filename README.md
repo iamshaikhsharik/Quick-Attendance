@@ -47,7 +47,7 @@ git clone https://github.com/iamshaikhsharik/Quick-Attendance.git
 3. 📸 html2canvas (optional screenshot capturing)
 
 📜 License
-This project is licensed under the MIT License — see the <a href="https://github.com/iamshaikhsharik/Quick-Attendance/License">LICENSE</a> file for details.
+This project is licensed under the MIT License — see the <a href="https://github.com/iamshaikhsharik/Quick-Attendance/blob/main/LICENSE">LICENSE</a> file for details.
 
 🤝 Contact
 👤 Created by <a href="https://github.com/iamshaikhsharik/">iamshaikhsharik</a>.
